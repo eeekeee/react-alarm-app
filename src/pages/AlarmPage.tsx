@@ -1,11 +1,9 @@
-import React from 'react'
-
 const AlarmPage = () => {
   return (
-    <div>
-      
+    <div className='alarm'>
+      <h1>Alarm</h1>
     </div>
-  )
-}
+  );
+};
 
-export default AlarmPage
+export default AlarmPage;
