@@ -24,9 +24,9 @@ const TimerPage = () => {
             setIsFinished(true);
             return 0;
           }
-          return prevTime - 100;
+          return prevTime - 10;
         });
-      }, 100);
+      }, 10);
     }
   };
 
@@ -57,12 +57,12 @@ const TimerPage = () => {
   };
 
   const resetTimer = () => {
+    setIsFinished(false);
     setTime(0);
     setInputMinutes(0);
     setInputSeconds(0);
     setIsRunning(false);
     setIsStopped(false);
-    setIsFinished(false);
   };
 
   return (

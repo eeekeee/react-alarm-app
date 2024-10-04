@@ -1,5 +1,5 @@
 * {
-  margin: 0;;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
@@ -19,14 +19,13 @@
   text-align: center;
 }
 
-
 /* header */
 
 .list {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-bottom: 2em; 
+  margin-bottom: 2em;
   list-style: none;
   gap: 1rem;
 }
@@ -71,7 +70,6 @@
   background-color: #4b4bff;
 }
 
-
 /* timer */
 .timer_inputs {
   display: flex;
@@ -112,4 +110,84 @@ input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+/* alarm */
+
+.current p {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.time_set {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  /* padding-top: 1rem; */
+}
+
+.time_set label {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.time_set input {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  background-color: #fff;
+  color: #222;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+}
+
+.time_set button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  background-color: #646cff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.time_set button:hover {
+  background-color: #4b4bff;
+}
+
+.alarm_list {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  list-style: none;
+}
+
+.alarm_item {
+  display: flex;
+  width: 400px;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 10px 20px;
+  background-color: #646cff;
+  color: #ffffff;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.alarm_item button {
+  padding: 5px 10px;
+  font-size: 1rem;
+  background-color: #ff0000;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+} 
+
+.alarm_item button:hover {
+  background-color: #ff4b4b;
 }
